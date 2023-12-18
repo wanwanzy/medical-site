@@ -43,31 +43,29 @@
         <li><a href="#"><i class="home"></i><em>管理首页</em></a></li>
     </ul>
     <ul class="bot">
-        <li><a href="#"><i class="backup"></i><em>我的问诊</em></a></li>
+        <li ><a href="#"><i class="backup"></i><em>我的问诊</em></a></li>
     </ul>
     <ul>
-        <li ><a href="patient.html"><i class="patient"></i><em>患者列表</em></a></li>
-        <li style="margin-left: 15px"><a href="info.html"><i class="nav"  ></i><em>具体信息</em></a></li>
-        <li class="cur"style="background: #3e454b url(images/menu_cur.gif) no-repeat right 50%;"><a href="info.html"style="margin-left: 15px"><i class="page"></i><em>报告生成</em></a></li>
-        <li style="margin-left: 15px"><a href="fina-report.html"><i class="articleCat"></i><em>最终报告</em></a></li>
+        <li class="cur"style="background: #3e454b url(images/menu_cur.gif) no-repeat right 50%;"><a href="patient.html"><i class="patient"></i><em>患者列表</em></a></li>
     </ul>
     <ul>
-        <li ><a href="#"><i class="mobile"></i><em>消息中心</em></a></li>
+        <li><a href="#"><i class="mobile"></i><em>消息中心</em></a></li>
     </ul>
     <ul>
         <li><a href="#"><i class="theme"></i><em>个人中心</em></a></li>
     </ul>
+
 </div></div>
     <div id="dcMain">
         <!-- 当前位置 -->
-        <div id="urHere">管理中心<b>></b><strong>初步报告生成</strong> </div>
+        <div id="urHere">管理中心<b>></b><strong>病患列表</strong><b>></b> <strong>李**</strong></div>
         <div class="mainBox imgModule">
-            <h3>初始报告</h3>
+
             <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
                 <tr >
                     <td style="font-size: 16px;font-family: 楷体;text-align: center;width:450px ">
                         <div style="width:100%;">
-                            <div style="width: 100%; font-size: 14px;font-family: 楷体;float:left">
+                            <div style="width: 100%; font-size: 16px;font-family: 楷体;float:left">
                                 <div style="width: 30%;float: left "><b> 姓名 : 李**</b></div>
                                 <div style="width: 30%;  float: left"><b> 性别 ：男</b></div>
                                 <div style="width: 30%; float: left "><b> 年龄 : 21</b></div>
@@ -126,26 +124,47 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding-bottom: 30px">
+                    <td rowspan="5" style="padding-bottom: 30px">
                         <div style="width: 100%;  text-align: center">
-                            <img style="width:60%" src="images/report1.png"/>
+                            <img style="width:65%" src="images/report1.png"/>
                         </div>
                     </td>
-                    <td>
-                        <div style="width:100%;height:70%;font-size: 16px;font-family: 楷体;text-align: left;line-height: 2;">
-                            <div style="margin-top: 40px;margin-bottom: 40px;margin-left: 50px">
+                    <td style="font-size: 16px;font-family: 楷体;text-align: center;width:450px ">
+                        <form style="background-color: #135f3e ; ">
 
-                                <b >
-                                    &nbsp&nbsp&nbsp &nbsp在左叶中部，发现一个实性低回声结节,大小约为0.5x0.7x0.6cm。
-                                    结节的<nobr style="color: #ebabff">形状不规则</nobr>，<nobr style="color: #ffb200">边界不清晰</nobr>，<nobr style="color: #ebabff">内部</nobr><nobr style="color: #ebabff">模糊</nobr>。
-                                    </nobr><nobr style="color: #cb0505">内部显示点状高回声灶</nobr>，可能与结节内的血管供应有关。建议进行进一步的评估和诊断。
+                            <div style="width:100%;float: left; ">
+                                <b>诊断结果：
+                                    <input    type="radio" id="1" name="fruit" value="apple"   checked>
+                                    <label for="1">良性结节</label>
+                                    <input style="accent-color: red;" type="radio" id="2" name="fruit" value="apple"  >
+                                    <label for="2">恶性结节</label>
                                 </b>
                             </div>
-                            <div style="width: 100%; margin-bottom: 20px;text-align: center">
-                                <button class="fancy-button">生成报告</button>
-                            </div>
-                        </div>
+                        </form>
                     </td>
+                <tr >
+                <td>
+                    <div style="width:100%;height:70%;font-size: 16px;font-family: 楷体;text-align: left;line-height: 2;">
+                        <div style=" margin-top: 40px;margin-bottom: 40px;margin-left: 50px">
+                            <b >
+                                &nbsp&nbsp&nbsp &nbsp在左叶中部，发现一个<strong style="color: #000000">实性低回声结节</strong>,大小约为<strong style="color: #000000">0.5x0.7x0.6cm</strong>。
+                                结节的<strong style="color: #000000">形状不规则，边界不清晰，内部模糊</strong>。
+                                内部显示<strong style="color: #000000">点状高回声灶</strong>，可能与结节内的血管供应有关。建议进行进一步的评估和诊断。
+                            </b>
+                        </div>
+                        <div style="width: 100%; margin-bottom: 20px;text-align: center">
+                            <button class="fancy-button" onclick="window.location.href = 'fina-report.html';">生成报告</button>
+                        </div>
+                    </div>
+                </td>
+                <tr style="width: 30px">
+
+                </tr>
+                <tr style="width: 30px">
+
+                </tr>
+                <tr style="width: 30px">
+
                 </tr>
             </table>
         </div>
